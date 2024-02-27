@@ -21,6 +21,7 @@ export function Login() {
       if (data.message !== 'Invalid credentials') {
         localStorage.setItem('logged', 'true')
       }
+      location.reload()
     } catch (error) {
       console.error(error)
     }
